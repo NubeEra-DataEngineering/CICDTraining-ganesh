@@ -1,0 +1,15 @@
+name: training
+on: 
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+jobs:
+  Job1FromUbuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Event is ${{  github.event_name}}"
+  Job2FromWindows:
+    runs-on: windows-latest 
+    steps:
+      - run: echo "Event is ${{  github.event_name}}"
