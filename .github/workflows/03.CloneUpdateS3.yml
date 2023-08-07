@@ -1,0 +1,14 @@
+name: Fresh machone, Clone repo, Link S3
+on: 
+    push:
+        branches: [main]
+jobs:
+  JobClone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloning Current repo
+        uses: actions/checkout@v3
+      - name: Conform
+        run:
+          ls $pwd
+          ls ~
