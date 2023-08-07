@@ -1,4 +1,4 @@
-name: Fresh machone, Clone repo, Link S3
+name: Fresh machine, Clone repo, Link S3
 on: 
     push:
         branches: [main]
